@@ -224,6 +224,7 @@ header nav {
 #fatima-logo:hover {
     color: var(--neon-cyan) !important;
     text-shadow: 0 0 15px var(--neon-cyan) !important;
+    transform: scale(1.15);
 }
 
 #fatima-logo .logo-icon {
