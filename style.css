@@ -97,7 +97,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    height: 75px;
     background-color: #234675; /* A solid medium-dark blue from your palette */
     border-bottom: 2px solid var(--neon-cyan);
     z-index: 1000;
@@ -118,8 +119,13 @@ header {
     border-bottom: 1px solid var(--border-color);
     z-index: 1000; */
 }
-
 .nav-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +134,8 @@ header {
     max-width: none !important;
     margin: 0 auto; 
     padding: 0 1.5rem; 
-}
+} */
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -137,6 +144,20 @@ header nav {
 }
 
 .logo {
+    position: absolute;
+    left: 20px; /* Forces logo right to the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*.logo {
     font-weight: 700;
     font-size: 1.25rem;
     color: #ffffff; /* High contrast white name in header */
@@ -144,7 +165,7 @@ header nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
+}  */
 
 .highlight-dot {
     width: 10px;
@@ -155,27 +176,35 @@ header nav {
 }
 
 .nav-links {
+    position: absolute;
+    right: 20px; /* Forces links right to the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
     margin: 0;
     padding: 0;
   /*  margin-left: auto; */
-}
+} */
+
+
+
 .nav-links a {
-    color: #ffffff; /* Bright white text so the title links are clearly readable */
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    transition: color 0.2s;
-}
-/*.nav-links a {
     color: #c2e0ff; /* Bright visible light-blue text for navigation */
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.2s;
-}*/
+}
 
 .nav-links a:hover {
     color: var(--neon-cyan);
