@@ -98,6 +98,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #234675; /* A solid medium-dark blue from your palette */
+    border-bottom: 2px solid var(--neon-cyan);
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+/*header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #3b72b0; /* Solid vibrant blue matching the Explore Work button */
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -139,14 +149,21 @@ header nav {
     display: flex;
     gap: 2.5rem;
 }
-
 .nav-links a {
+    color: #ffffff; /* Bright white text so the title links are clearly readable */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+/*.nav-links a {
     color: #c2e0ff; /* Bright visible light-blue text for navigation */
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.2s;
-}
+}*/
+
 .nav-links a:hover {
     color: var(--neon-cyan);
     text-shadow: 0 0 10px var(--neon-cyan);
