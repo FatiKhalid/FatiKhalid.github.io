@@ -226,6 +226,18 @@ header nav {
     text-shadow: 0 0 15px var(--neon-cyan) !important;
 }
 
+#fatima-logo .logo-icon {
+    color: var(--neon-cyan);
+    font-size: 1rem;
+    text-shadow: 0 0 10px var(--neon-cyan);
+    margin: 0 0.4rem;
+    transition: transform 0.2s ease;
+}
+
+#fatima-logo:hover .logo-icon {
+    transform: scale(1.15);
+}
+
 .nav-links a {
     color: #c2e0ff; /* Bright visible light-blue text for navigation */
     text-decoration: none;
