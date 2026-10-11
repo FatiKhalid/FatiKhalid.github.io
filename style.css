@@ -98,12 +98,15 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-/*    background-color: #0c2b4e;  Solid dark blue banner background */
- /*   background-color: rgba(0, 240, 255, 0.15);  Matches the light blue badge fill */
+    background-color: #3b72b0; /* Solid vibrant blue matching the Explore Work button */
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+/*    background-color: #0c2b4e;  Solid dark blue banner background 
+   background-color: rgba(0, 240, 255, 0.15);  Matches the light blue badge fill 
     background-color: rgba(74, 127, 193, 0.45);  
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
+    z-index: 1000; */
 }
 
 header nav {
