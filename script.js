@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links with subtle click animation feedback
+// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,9 +9,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
-
-// Interactive dynamic greeting in the console & smooth page load effect
-window.addEventListener('load', () => {
-    console.log("Welcome to Fatima Khalid's Portfolio website!");
 });
