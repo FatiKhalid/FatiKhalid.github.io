@@ -351,45 +351,62 @@ header nav {
     font-size: 1.05rem;
 }
 
-/* Contact Grid */
-#contact {
-    text-align: center;
-}
-
-.contact-text {
-    color: var(--text-secondary);
-    margin-bottom: 2.5rem;
-    font-size: 1.15rem;
-}
-
+/* Contact Grid & Compact Icon Sizing */
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 1.5rem;
-    max-width: 800px;
+    flex-wrap: wrap;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .contact-card {
-    padding: 1.5rem;
-    border-radius: 12px;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 500;
+    width: 75px;
+    height: 75px;
+    border-radius: 16px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    font-size: 1rem;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-primary);
 }
 
 .contact-card i {
-    color: var(--neon-cyan);
     font-size: 1.75rem;
+    color: var(--neon-cyan);
+    transition: transform 0.2s ease;
 }
 
-.contact-card span {
-    word-break: break-all;
+.contact-card:hover i {
+    transform: scale(1.12);
+}
+
+/* Hover / Click Reveal Popup for Email and Phone */
+.interactive-reveal .reveal-text {
+    position: absolute;
+    bottom: -45px;
+    background: var(--card-bg);
+    border: 1px solid var(--neon-cyan);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--glow-color);
+    z-index: 10;
+}
+
+.interactive-reveal:hover .reveal-text,
+.interactive-reveal.revealed .reveal-text {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* Footer */
