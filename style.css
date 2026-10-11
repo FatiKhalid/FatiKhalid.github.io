@@ -1,13 +1,14 @@
 :root {
-    --bg-color: #0c2b4e;          /* Shiny vibrant royal blue base */
-    --card-bg: rgba(16, 52, 96, 0.75); /* Luminous glass blue card */
-    --text-primary: #ffffff;
-    --text-secondary: #c2e0ff;
-    --neon-cyan: #00f0ff;         /* Glowing neon cloud cyan */
-    --neon-bright: #38bdf8;       /* Bright electric sky blue */
-    --glow-color: rgba(0, 240, 255, 0.45);
-    --border-color: rgba(0, 240, 255, 0.35);
+    --bg-color: #e4edf9;          /* Light Ice Blue (Background) */
+    --card-bg: rgba(255, 255, 255, 0.9); /* Luminous bright card surface */
+    --text-primary: #142340;      /* Deep Navy (High contrast text) */
+    --text-secondary: #234675;    /* Medium-Dark Blue (Subtitles) */
+    --neon-cyan: #3b72b0;         /* Vibrant Blue Accent */
+    --neon-bright: #4a7fc1;       /* Shiny Highlight Blue */
+    --glow-color: rgba(74, 127, 193, 0.45); /* Shiny border glow */
+    --border-color: rgba(74, 127, 193, 0.5); /* Shiny outline border */
 }
+
 
 * {
     margin: 0;
@@ -17,7 +18,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: linear-gradient(135deg, #091e3a 0%, #114275 100%);
+    background: linear-gradient(135deg, #e4edf9 0%, #cbd8f0 100%);
     background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
@@ -26,7 +27,6 @@ body {
     position: relative;
     min-height: 100vh;
 }
-
 /* Shiny Neon Cloud Moving Background Orbs */
 .neon-background {
     position: fixed;
