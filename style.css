@@ -204,6 +204,8 @@ header nav {
     color: var(--neon-cyan);
     text-shadow: 0 0 12px var(--neon-cyan);
 
+}
+
 .nav-links a {
     color: #c2e0ff; /* Bright visible light-blue text for navigation */
     text-decoration: none;
