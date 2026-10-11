@@ -207,6 +207,10 @@ header nav {
 }
 
 #fatima-logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: 700;
     font-size: 1.25rem;
     color:  #c2e0ff !important;
