@@ -228,9 +228,9 @@ header nav {
 }
 
 #fatima-logo .logo-icon {
-    color: var(--neon-cyan);
+    color: var(--neon-cyan)  !important;
     font-size: 1rem;
-    text-shadow: 0 0 10px var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan)  !important;
     margin: 0 0.4rem;
     transition: transform 0.2s ease;
 }
