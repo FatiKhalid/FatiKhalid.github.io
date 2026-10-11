@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima Khalid | Portfolio</title>
+    <title>Fatima Khalid | IT & Data Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Luminous Cloud-Themed Animated Background -->
+    <div class="cloud-background">
+        <div class="cloud-orb orb-sky"></div>
+        <div class="cloud-orb orb-azure"></div>
+    </div>
 
     <!-- Header & Navigation -->
     <header id="header">
@@ -28,12 +34,12 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container hero-content">
-            <div class="badge-pill"><i class="fa-solid fa-bolt"></i> Available for Opportunities</div>
+            <div class="cloud-badge"><i class="fa-solid fa-cloud-bolt"></i> Cloud Operations & Data Analytics</div>
             <h1>Fatima Khalid</h1>
             <p class="tagline">IT Professional | Cloud Operations & Data Analyst | PL-300 Certified | Power BI Developer | AWS Cloud Practitioner</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> Explore Projects</a>
-                <a href="#contact" class="btn btn-secondary"><i class="fa-regular fa-envelope"></i> Get in Touch</a>
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Work</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fa-regular fa-paper-plane"></i> Get in Touch</a>
             </div>
         </div>
     </section>
@@ -41,32 +47,32 @@
     <!-- About Section -->
     <section id="about" class="section container">
         <h2 class="section-title">About Me</h2>
-        <div class="about-card glow-card">
-            <p>I am a dedicated IT professional and data specialist bridging the gap between robust cloud infrastructure and actionable business intelligence. Certified as a Microsoft Power BI Data Analyst (PL-300) and trained in AWS cloud operations, I thrive on turning raw datasets into clean, impactful visual dashboards and establishing reliable technical solutions.</p>
+        <div class="about-card luminous-card">
+            <p>I am an IT professional bridging cloud infrastructure and business intelligence. Certified in Microsoft Power BI (PL-300) and trained in AWS cloud operations, I specialize in transforming raw data structures into clear, actionable insights and building scalable technical environments.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section container">
-        <h2 class="section-title">Technical Expertise</h2>
+        <h2 class="section-title">Core Expertise</h2>
         <div class="skills-grid">
             
-            <!-- Featured Data Analytics Box -->
-            <div class="skill-category glow-card featured-skill">
-                <div class="featured-badge">Primary Focus</div>
-                <h3><i class="fa-solid fa-chart-pie"></i> Data Analytics & Business Intelligence</h3>
+            <!-- Data Analytics Highlight -->
+            <div class="skill-category luminous-card featured-skill">
+                <div class="cloud-tag-badge">Primary Focus</div>
+                <h3><i class="fa-solid fa-chart-line"></i> Data Analytics & BI</h3>
                 <div class="tag-container">
-                    <span class="tag data-tag">Microsoft Power BI</span>
-                    <span class="tag data-tag">DAX Calculations</span>
-                    <span class="tag data-tag">Power Query</span>
-                    <span class="tag data-tag">SQL Validation</span>
-                    <span class="tag data-tag">Star Schema Modeling</span>
-                    <span class="tag data-tag">Advanced Excel</span>
+                    <span class="tag cloud-tag">Microsoft Power BI</span>
+                    <span class="tag cloud-tag">DAX Calculations</span>
+                    <span class="tag cloud-tag">Power Query</span>
+                    <span class="tag cloud-tag">SQL Validation</span>
+                    <span class="tag cloud-tag">Star Schema Modeling</span>
+                    <span class="tag cloud-tag">Advanced Excel</span>
                 </div>
             </div>
 
-            <!-- Cloud & DevOps Box -->
-            <div class="skill-category glow-card">
+            <!-- Cloud & DevOps -->
+            <div class="skill-category luminous-card">
                 <h3><i class="fa-solid fa-cloud"></i> Cloud & Infrastructure</h3>
                 <div class="tag-container">
                     <span class="tag">AWS Services</span>
@@ -77,9 +83,9 @@
                 </div>
             </div>
 
-            <!-- Tools & Programming Box -->
-            <div class="skill-category glow-card">
-                <h3><i class="fa-solid fa-toolbox"></i> Tools & Management</h3>
+            <!-- Tools & Management -->
+            <div class="skill-category luminous-card">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Methods</h3>
                 <div class="tag-container">
                     <span class="tag">Python</span>
                     <span class="tag">Git & GitHub</span>
@@ -95,14 +101,14 @@
     <section id="projects" class="section container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card glow-card">
+            <div class="project-card luminous-card">
                 <div class="project-header">
                     <i class="fa-brands fa-github project-icon"></i>
                     <h3>Data Analysis Portfolio</h3>
                 </div>
-                <p>A comprehensive public GitHub portfolio housing professional business intelligence reports, complex Star Schema data models, and interactive dashboards (featuring AdventureWorks and Maven Market datasets).</p>
+                <p>A structured public repository housing business intelligence reports, complex data modeling, and interactive dashboards featuring AdventureWorks and Maven Market datasets.</p>
                 <div class="project-links">
-                    <a href="https://github.com/fatikhalid" target="_blank" class="btn btn-primary external-link-btn">
+                    <a href="https://github.com/fatikhalid" target="_blank" class="btn btn-primary">
                         View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
@@ -112,14 +118,25 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section container">
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="contact-text">Open to discussing cloud operations, data analytics projects, and professional collaborations.</p>
-        <div class="social-links">
-            <a href="https://github.com/fatikhalid" target="_blank" class="social-btn glow-card">
-                <i class="fa-brands fa-github"></i> GitHub
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">Reach out directly for opportunities in cloud operations and data analytics.</p>
+        
+        <div class="contact-grid">
+            <a href="mailto:fatima.khlalid.89.fk@gmail.coom" class="contact-card luminous-card">
+                <i class="fa-solid fa-envelope"></i>
+                <span>fatima.khlalid.89.fk@gmail.coom</span>
             </a>
-            <a href="https://www.linkedin.com/in/fatima-13-khalid/" target="_blank" class="social-btn glow-card">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            <a href="tel:202535300" class="contact-card luminous-card">
+                <i class="fa-solid fa-phone"></i>
+                <span>20-253-5300</span>
+            </a>
+            <a href="https://www.linkedin.com/in/fatima-13-khalid/" target="_blank" class="contact-card luminous-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/fatikhalid" target="_blank" class="contact-card luminous-card">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Portfolio</span>
             </a>
         </div>
     </section>
@@ -127,7 +144,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Fatima Khalid. Built with GitHub Pages & custom glowing design.</p>
+            <p>&copy; 2026 Fatima Khalid. Built with GitHub Pages.</p>
         </div>
     </footer>
 
