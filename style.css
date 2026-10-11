@@ -148,6 +148,7 @@ header nav {
     list-style: none;
     display: flex;
     gap: 2.5rem;
+    margin-left: auto;
 }
 .nav-links a {
     color: #ffffff; /* Bright white text so the title links are clearly readable */
