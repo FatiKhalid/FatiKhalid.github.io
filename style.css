@@ -119,13 +119,13 @@ header {
     z-index: 1000; */
 }
 
-header nav.nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
     width: 100%;
-    max-width: 100%;
+   /* max-width: 100%; */
    /* margin: 0 auto; */
     padding: 0 3rem; 
 }
@@ -157,8 +157,10 @@ header nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
-    margin-left: auto;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  /*  margin-left: auto; */
 }
 .nav-links a {
     color: #ffffff; /* Bright white text so the title links are clearly readable */
