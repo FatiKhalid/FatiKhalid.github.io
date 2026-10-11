@@ -153,7 +153,7 @@ header nav {
     transform: translateY(-50%);
     font-weight: 700;
     font-size: 1.25rem;
-    color: #c2e0ff;
+    color: #c2e0ff !important;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -201,8 +201,8 @@ header nav {
 } */
 
 .logo:hover {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 12px var(--neon-cyan);
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 12px var(--neon-cyan) !important;
 
 }
 
