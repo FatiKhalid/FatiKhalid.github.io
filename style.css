@@ -119,14 +119,15 @@ header {
     z-index: 1000; */
 }
 
-/*header nav.nav-container {
+header nav.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 2rem; */
+    width: 100%;
+    max-width: 100%;
+   /* margin: 0 auto; */
+    padding: 0 3rem; 
 }
 header nav {
     display: flex;
