@@ -97,7 +97,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #234675; /* A solid medium-dark blue from your palette */
     border-bottom: 2px solid var(--neon-cyan);
     z-index: 1000;
@@ -125,9 +125,9 @@ header {
     align-items: center;
     height: 75px;
     width: 100%;
-   /* max-width: 100%; */
-   /* margin: 0 auto; */
-    padding: 0 1rem; 
+    max-width: none !important;
+    margin: 0 auto; 
+    padding: 0 1.5rem; 
 }
 header nav {
     display: flex;
