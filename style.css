@@ -210,7 +210,7 @@ header nav {
     position: absolute;
     left: 20px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
     font-weight: 700;
     font-size: 1.25rem;
     color:  #c2e0ff !important;
@@ -224,7 +224,7 @@ header nav {
 #fatima-logo:hover {
     color: var(--neon-cyan) !important;
     text-shadow: 0 0 15px var(--neon-cyan) !important;
-    transform: scale(1.15);
+    transform: translateY(-50%) !important; /* Locks the position so it never moves */
 }
 
 #fatima-logo .logo-icon {
