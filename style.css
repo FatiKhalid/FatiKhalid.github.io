@@ -210,7 +210,9 @@ header nav {
     position: absolute;
     left: 20px;
     top: 50%;
-    transform: translateY(-50%) !important;
+   /* transform: translateY(-50%) !important; */
+    transform: translateY(-50%) translateZ(0) !important;
+    -webkit-transform: translateY(-50%) translateZ(0) !important;
     font-weight: 700;
     font-size: 1.25rem;
     color:  #c2e0ff !important;
@@ -224,7 +226,7 @@ header nav {
 #fatima-logo:hover {
     color: var(--neon-cyan) !important;
     text-shadow: 0 0 15px var(--neon-cyan) !important;
-    transform: translateY(-50%) !important; /* Locks the position so it never moves */
+    transform: translateY(-50%) translateZ(0) !important; /* Locks the position so it never moves */
 }
 
 #fatima-logo .logo-icon {
@@ -232,7 +234,8 @@ header nav {
     font-size: 1rem;
     text-shadow: 0 0 10px var(--neon-cyan)  !important;
     margin: 0 0.4rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, text-shadow 0.2s ease !important;
+}
 }
 
 #fatima-logo:hover .logo-icon {
