@@ -236,7 +236,9 @@ header nav {
 }
 
 #fatima-logo:hover .logo-icon {
-    transform: scale(1.15);
+  /*  transform: scale(1.15); */
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 15px var(--neon-cyan) !important;
 }
 
 .nav-links a {
