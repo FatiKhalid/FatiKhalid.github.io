@@ -263,18 +263,22 @@ header nav {
     padding: 12rem 0 7rem 0;
     text-align: center;
 }  */
-
-.hero {
-    height: 100vh;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0 1rem; /* Centers everything vertically and horizontally within the full screen */
+/* Force the Hero section to fill the exact screen height */
+section.hero, #hero {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 0 1rem !important;
+    margin: 0 !important;
+    overflow: hidden !important;
 }
+
 
 .badge-pill {
     display: inline-flex;
