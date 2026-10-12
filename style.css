@@ -259,9 +259,21 @@ header nav {
 }
 
 /* Hero Section */
-.hero {
+/*.hero {
     padding: 12rem 0 7rem 0;
     text-align: center;
+}  */
+
+.hero {
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1rem; /* Centers everything vertically and horizontally within the full screen */
 }
 
 .badge-pill {
